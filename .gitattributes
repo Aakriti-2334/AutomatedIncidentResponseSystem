@@ -1,0 +1,9 @@
+Models/cicids2018/CICIDS2018_train_balanced_alligned.csv filter=lfs diff=lfs merge=lfs -text
+Models/nsbw/UNSW_aligned_test_ordered.csv filter=lfs diff=lfs merge=lfs -text
+Models/cicids2018/CICIDS2018_test_balanced_alligned.csv filter=lfs diff=lfs merge=lfs -text
+Models/nsbw/UNSW_aligned_train_ordered.csv filter=lfs diff=lfs merge=lfs -text
+Models/cicids_live_predictions.csv filter=lfs diff=lfs merge=lfs -text
+Models/cicids2018/rf.pkl filter=lfs diff=lfs merge=lfs -text
+Models/nsbw/nb15_rf.pkl filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.pkl filter=lfs diff=lfs merge=lfs -text
