@@ -1,0 +1,12 @@
+[build]
+  command = "pip install -r requirements.txt"
+  publish = "static"
+  functions = "netlify/functions"
+
+[functions]
+  included_files = ["templates/*", "services/*", "Models/*", "user.py"]
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api"
+  status = 200
