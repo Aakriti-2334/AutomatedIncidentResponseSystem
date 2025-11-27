@@ -6,6 +6,13 @@
 [functions]
   included_files = ["templates/*", "services/*", "Models/*", "user.py"]
 
+# This rule serves your static files directly from the 'static' directory
+[[redirects]]
+  from = "/static/*"
+  to = "/:splat"
+  status = 200
+
+# This rule sends all other requests to your Flask app
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/api"
