@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatech Solutions - Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/honeypot_style.css') }}">
+</head>
+<body>
+    <!-- This overlay is where all the animations will happen -->
+    <div id="animation-overlay"></div>
+    <div id="attack-banner"></div>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Innovatech</span> Solutions</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Pioneering Future-Ready Technology</h1>
+            <p>Driving innovation and excellence through cutting-edge software solutions and enterprise services.</p>
+            <div id="simulation-controls">
+                <button id="start-simulation-btn">Start Attack Simulation</button>
+                <button id="stop-simulation-btn" disabled>Stop Simulation</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="container">
+        <h2 class="section-title">About Our Company</h2>
+        <p>Innovatech Solutions has been a leader in the technology sector for over a decade. We specialize in cloud computing, data analytics, and cybersecurity, providing robust and scalable solutions to our global clientele. Our mission is to empower businesses by transforming their digital landscape.</p>
+    </section>
+
+    <section id="login-section">
+        <div class="container">
+            <h2 class="section-title">Client Portal Login</h2>
+            <div id="login-form">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit">Sign In</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Innovatech Solutions &copy; 2025</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/honeypot_app.js') }}"></script>
+</body>
+</html>

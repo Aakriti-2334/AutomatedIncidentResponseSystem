@@ -1,0 +1,205 @@
+/* General Body and Typography */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: #0779e4 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Showcase Area */
+#showcase {
+    min-height: 400px;
+    background: #333 url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative; /* For overlay */
+}
+
+#showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+#start-simulation-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e44d26;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-simulation-btn:hover {
+    background-color: #f55d36;
+}
+
+#start-simulation-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+#simulation-controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#stop-simulation-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#stop-simulation-btn:hover {
+    background-color: #5a6268;
+}
+
+#stop-simulation-btn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Login Form */
+#login-section {
+    background: #fff;
+}
+
+#login-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #0779e4;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+/* --- Animation Overlay and Effects --- */
+#animation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allows clicking through the overlay */
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.malicious-ip {
+    position: absolute;
+    padding: 10px 15px;
+    background-color: rgba(220, 53, 69, 0.85); /* Red background */
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    opacity: 0;
+    animation: fade-in-out 2.5s ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; transform: scale(0.8); }
+    20% { opacity: 1; transform: scale(1.05); }
+    80% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.7); }
+}

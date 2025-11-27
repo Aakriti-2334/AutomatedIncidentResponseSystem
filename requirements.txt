@@ -1,0 +1,7 @@
+Flask
+pandas
+Flask-SocketIO
+pytest
+pytest-flask
+Flask-Login
+Werkzeug
